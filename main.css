@@ -1,0 +1,76 @@
+* {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+::selection {
+    background: #ffffff;
+  }
+  ::-moz-selection {
+    background: #ffffff;
+  }
+
+body {
+    margin: 0;
+}
+
+#bgvid {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: fixed;
+    object-fit: cover;
+    animation: fade 2s;
+}
+
+.header {
+    background: rgba(255, 215, 170, 0.9);
+    top: calc(50vh - (3em + 40px));
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    padding: 20px;
+    border-radius: 40px;
+
+    animation-name: appear;
+    animation-duration: 2s;
+
+    text-align: center;
+}
+
+.s {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+@keyframes appear {
+    from { opacity: 0; left: -200vh; right: 180vh;}
+    to { opacity: 1; left: 10vw; right: 10vw; }
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.secondary {
+    opacity: 0;
+    animation: fade 1s 3s forwards;
+}
+
+.more {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 3vh;
+    color: white;
+    opacity: 0;
+
+    animation: fade 1s 5s forwards;
+}
+
+.more span {
+    background: #4d424242;
+    padding: 20px;
+    border-radius: 15px;
+}
