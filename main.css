@@ -5,10 +5,10 @@
 }
 
 ::selection {
-    background: #00ff22;
+    background: hotpink;
   }
   ::-moz-selection {
-    background: #00ff22;
+    background: hotpink;
   }
 
 body {
@@ -247,3 +247,14 @@ body {
     text-decoration: underline;
 }
 
+#jumpto {
+    position: fixed;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.jumplinks li a {
+    color: black;
+}
